@@ -2,8 +2,8 @@ import React from 'react'
 
 const Findfree = () => {
   return (
-    <div className="bottom-10 text-xl">
-      
+    <div className="top-20 relative pb-20 ">
+      ff
     </div>
   )
 }

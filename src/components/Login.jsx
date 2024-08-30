@@ -2,8 +2,8 @@ import React from 'react';
 
 const Login = () => {
   return (
-    <div className="relative w-full h-full">
-      <p className="text-xl mb-5">Login</p>
+    <div className="top-20 relative pb-20 ">
+      <p className="">Login</p>
     </div>
   );
 };

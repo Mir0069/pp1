@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Signup = () => {
+const Postproject = () => {
   return (
     <div className='top-20 relative pb-20 '>
-      signup
+      post
     </div>
   )
 }
 
-export default Signup
+export default Postproject

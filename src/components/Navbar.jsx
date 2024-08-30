@@ -1,20 +1,21 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import logo from './images/logo.png';
 
 
 const Navbar = () => {
   return (
-    <nav className="text-white py-3 w-full h-20 absolute top-0 left-0 bg-black">
+    <nav className="text-white py-3 w-full h-20 fixed top-0 left-0 bg-black">
       <div className="container mx-auto flex justify-between items-center px-4">
         {/* Logo */}
-        <img src="" alt="Logo" className="h-8" />
-        
+        <img src={logo} className='w-11' />
+
         {/* Navigation Links */}
         <ul className="flex space-x-4">
           <li>
-            <NavLink 
-              to="/" 
-              className={({ isActive }) => 
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
                 isActive ? 'px-4 py-2 bg-gray-700 rounded' : 'px-4 py-2'
               }
             >
@@ -22,9 +23,9 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink 
+            <NavLink
               to="/findwork"
-              className={({ isActive }) => 
+              className={({ isActive }) =>
                 isActive ? 'px-4 py-2 bg-gray-700 rounded' : 'px-4 py-2'
               }
             >
@@ -32,9 +33,9 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink 
+            <NavLink
               to="/findfreelancers"
-              className={({ isActive }) => 
+              className={({ isActive }) =>
                 isActive ? 'px-4 py-2 bg-gray-700 rounded' : 'px-4 py-2'
               }
             >
@@ -42,9 +43,9 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink 
+            <NavLink
               to="/login"
-              className={({ isActive }) => 
+              className={({ isActive }) =>
                 isActive ? 'px-4 py-2 bg-gray-700 rounded' : 'px-4 py-2'
               }
             >
@@ -52,9 +53,9 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink 
+            <NavLink
               to="/signup"
-              className={({ isActive }) => 
+              className={({ isActive }) =>
                 isActive ? 'px-4 py-2 bg-gray-700 rounded' : 'px-4 py-2'
               }
             >
@@ -64,8 +65,8 @@ const Navbar = () => {
         </ul>
 
         {/* Post a Project Button */}
-        <NavLink 
-          to="/post-project" 
+        <NavLink
+          to="/post-project"
           className="group inline-block rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-2 hover:text-white focus:outline-none focus:ring active:text-opacity-75"
         >
           <span className="block rounded-full bg-black px-6 py-2 text-sm font-medium group-hover:bg-transparent">

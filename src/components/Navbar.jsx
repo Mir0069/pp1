@@ -5,7 +5,7 @@ import logo from './images/logo.png';
 
 const Navbar = () => {
   return (
-    <nav className="text-white py-3 w-full h-20 fixed top-0 left-0 bg-black">
+    <nav className="text-white py-3 w-full h-20 fixed top-0 left-0 bg-black z-50">
       <div className="container mx-auto flex justify-between items-center px-4">
         {/* Logo */}
         <img src={logo} className='w-11' />

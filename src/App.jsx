@@ -20,7 +20,7 @@ import Footer from './components/Footer'
 
 function App() {
     //  main div
-    return <div className='w-[98vw] min-h-screen flex-col ' >
+    return <div className=' min-h-screen flex-col ' >
         {/* div for navbar dom */}
         <div>
             <Navbar />
